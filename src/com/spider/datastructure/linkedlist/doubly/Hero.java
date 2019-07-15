@@ -1,4 +1,4 @@
-package com.liboru.datastructure.linkedlist.oneway;
+package com.spider.datastructure.linkedlist.doubly;
 
 public class Hero implements Comparable<Hero> {
 	

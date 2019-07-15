@@ -1,4 +1,4 @@
-package com.liboru.datastructure.linkedlist.josepfu;
+package com.spider.datastructure.linkedlist.josepfu;
 
 public class Boy {
 	

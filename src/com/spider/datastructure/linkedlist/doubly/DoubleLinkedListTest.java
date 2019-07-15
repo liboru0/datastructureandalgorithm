@@ -1,4 +1,4 @@
-package com.liboru.datastructure.linkedlist.doubly;
+package com.spider.datastructure.linkedlist.doubly;
 
 
 public class DoubleLinkedListTest {

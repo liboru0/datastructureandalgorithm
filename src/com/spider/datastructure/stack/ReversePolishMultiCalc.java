@@ -1,4 +1,4 @@
-package com.liboru.datastructure.stack;
+package com.spider.datastructure.stack;
 
 import java.util.ArrayList;
 import java.util.Collections;

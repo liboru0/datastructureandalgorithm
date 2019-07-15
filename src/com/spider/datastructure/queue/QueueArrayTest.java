@@ -1,4 +1,4 @@
-package com.liboru.datastructure.queue;
+package com.spider.datastructure.queue;
 
 public class QueueArrayTest {
 	

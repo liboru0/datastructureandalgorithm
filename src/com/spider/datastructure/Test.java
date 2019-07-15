@@ -1,4 +1,4 @@
-package com.liboru.datastructure;
+package com.spider.datastructure;
 
 public class Test {
 	

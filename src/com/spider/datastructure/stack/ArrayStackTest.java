@@ -1,4 +1,4 @@
-package com.liboru.datastructure.stack;
+package com.spider.datastructure.stack;
 
 public class ArrayStackTest {
 	

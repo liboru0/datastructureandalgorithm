@@ -1,4 +1,4 @@
-package com.liboru.datastructure.array.sparsearray;
+package com.spider.datastructure.array.sparsearray;
 
 import java.io.File;
 import java.io.FileInputStream;
