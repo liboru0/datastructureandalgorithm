@@ -15,31 +15,24 @@ public class ShellSortSwap {
 	}
 
 	public static void sort(int[] arr) {
-		int temp = 0;
-		for (int i = 5; i < arr.length; i++) {
-			// 遍历各组中所有的元素
-			for (int j = i - 5; j >= 0; j -= 5) {
-				// 如果当前元素大于加上步长后的那个元素，说明需要交换
-				if (arr[j] > arr[j + 5]) {
-					temp = arr[j];
-					arr[j] = arr[j + 5];
-					arr[j + 5] = temp;
-				}
-			}
-		}
-		ShellSortSwap.print(arr);
-		for (int i = 2; i < arr.length; i++) {
-			// 遍历各组中所有的元素
-			for (int j = i - 2; j >= 0; j -= 2) {
-				// 如果当前元素大于加上步长后的那个元素，说明需要交换
-				if (arr[j] > arr[j + 2]) {
-					temp = arr[j];
-					arr[j] = arr[j + 2];
-					arr[j + 2] = temp;
-				}
-			}
-		}
-		ShellSortSwap.print(arr);
+		
+		int n=arr.length;
+        int gap=n/2;
+        while(gap>=1){
+            for(int i=gap;i<arr.length;i++){
+                int j=0;
+                int temp = arr[i];
+                for(j=i-gap;j>=0 && temp<arr[j];j=j-gap){
+                    arr[j+gap] = arr[j];
+                }
+                arr[j+gap] = temp;
+            }
+            ShellSortSwap.print(arr);
+            gap = gap/2;
+        }
+		
+		
+		
 	}
 
 }
