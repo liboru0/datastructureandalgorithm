@@ -9,9 +9,23 @@ public class ShellSortSwap {
 	}
 
 	public static void main(String[] args) {
-		int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
+		/*int[] arr = { 8, 9, 1, 7, 2, 3, 5, 4, 6, 0 };
 		ShellSortSwap.print(arr);
+		ShellSortSwap.sort(arr);*/
+		
+		int length = 80000;
+		int[] arr = new int[length];
+		for (int i = 0; i < length; i++) {
+			arr[i] = (int)(Math.random()*8000000); // 生成一个[0,8000000)的随机数
+		}
+		
+		//SelectSort.print(arr);
+		long start = System.currentTimeMillis();
 		ShellSortSwap.sort(arr);
+		long end = System.currentTimeMillis();
+		ShellSortSwap.print(arr);
+		System.out.println("共耗时："+(end-start)/1000+"秒");
+		
 	}
 
 	public static void sort(int[] arr) {
@@ -27,7 +41,7 @@ public class ShellSortSwap {
                 }
                 arr[j+gap] = temp;
             }
-            ShellSortSwap.print(arr);
+            //ShellSortSwap.print(arr);
             gap = gap/2;
         }
 		
